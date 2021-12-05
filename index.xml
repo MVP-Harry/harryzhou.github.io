@@ -6,25 +6,14 @@
     <description>Recent content on Harry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Dec 2021 21:56:35 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Dec 2021 10:02:24 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Math</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/math/</link>
-      <pubDate>Sat, 04 Dec 2021 21:56:35 -0800</pubDate>
+      <title>Purpose of This Blog</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/purpose-of-this-blog/</link>
+      <pubDate>Sun, 05 Dec 2021 10:02:24 -0800</pubDate>
       
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/math/</guid>
-      <description>Block math:
-$$\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }$$
-Inline math: $a + b = c$</description>
-    </item>
-    
-    <item>
-      <title>Hello World!</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/new_blog/</link>
-      <pubDate>Sat, 04 Dec 2021 20:06:15 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/new_blog/</guid>
-      <description>Title std::cout &amp;lt;&amp;lt; &amp;#34;Hello World!&amp;#34; &amp;lt;&amp;lt; std::endl; bold text italic text</description>
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/purpose-of-this-blog/</guid>
+      <description>This is a personal blog. Although I hope the readers (who knows? Maybe the blog will blow up one day) can take away a lot from reading my posts, the main purpose of the blog is to document my observations, opinions and growths. As of right now, the blog will be mainly on computer science, math, life in general, my takeaways on current events, and music/book reviews.</description>
     </item>
     
     
