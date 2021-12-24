@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Download Youtube Playlists With Python | Harry&#39;s Blog</title>
+<meta name="keywords" content="Tech, Python, Music" />
+<meta name="description" content="Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don&rsquo;t particularly fit my taste, so I want to download my own Christmas playlist.
+But my dad refused to tell me how he pirates his music. Now in the past, I&rsquo;ve been using this command-line tool youtube-dl to download youtube videos and convert them to mp3.">
+<meta name="author" content="Harry Zhou">
+<link rel="canonical" href="https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/" />
+<link crossorigin="anonymous" href="/harryzhou.github.io/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/harryzhou.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mvp-harry.github.io/harryzhou.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mvp-harry.github.io/harryzhou.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mvp-harry.github.io/harryzhou.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mvp-harry.github.io/harryzhou.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mvp-harry.github.io/harryzhou.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.89.4" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="Download Youtube Playlists With Python" />
+<meta property="og:description" content="Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don&rsquo;t particularly fit my taste, so I want to download my own Christmas playlist.
+But my dad refused to tell me how he pirates his music. Now in the past, I&rsquo;ve been using this command-line tool youtube-dl to download youtube videos and convert them to mp3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-24T12:50:51-08:00" />
+<meta property="article:modified_time" content="2021-12-24T12:50:51-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Download Youtube Playlists With Python"/>
+<meta name="twitter:description" content="Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don&rsquo;t particularly fit my taste, so I want to download my own Christmas playlist.
+But my dad refused to tell me how he pirates his music. Now in the past, I&rsquo;ve been using this command-line tool youtube-dl to download youtube videos and convert them to mp3."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://mvp-harry.github.io/harryzhou.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Download Youtube Playlists With Python",
+      "item": "https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Download Youtube Playlists With Python",
+  "name": "Download Youtube Playlists With Python",
+  "description": "Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don\u0026rsquo;t particularly fit my taste, so I want to download my own Christmas playlist.\nBut my dad refused to tell me how he pirates his music. Now in the past, I\u0026rsquo;ve been using this command-line tool youtube-dl to download youtube videos and convert them to mp3.",
+  "keywords": [
+    "Tech", "Python", "Music"
+  ],
+  "articleBody": "Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don’t particularly fit my taste, so I want to download my own Christmas playlist.\nBut my dad refused to tell me how he pirates his music. Now in the past, I’ve been using this command-line tool youtube-dl to download youtube videos and convert them to mp3. However, there are a few issues with the tool. First of all, it can be extremely slow sometimes. Secondly, I frequently received error messages like ERROR: unable to download video data: HTTP Error 403: Forbidden in the middle of downloading a playlist/album. Turns out that the way to fix this problem is to remove the cache using flags such as --rm-cache-dir. However, when I try to download an entire playlist, I don’t know how to add the flag.\nTherefore, after a little research, I decided to go with a new method using the python library pytube. The following function would take the url of a video and convert it to mp3 and save it in a specified directory:\ndef download_single_video(url): yt = YouTube(url) # extract only audio video = yt.streams.filter(only_audio=True).first() # check for destination to save file destination = './Music/Relaxing2' # download the file out_file = video.download(output_path=destination) # save the file base, ext = os.path.splitext(out_file) new_file = base + '.mp3' os.rename(out_file, new_file) To download an entire playlist, we just need the Playlist feature from the pytube library and iterate though each url in the playlist:\nplaylist = Playlist( str(input(\"Enter the URL of the video you want to download: \\n \"))) print('Number of videos: %s' % len(playlist.video_urls)) for url in playlist.video_urls: download_single_video(url) Using this method, I easily downloaded my amazing playlist. Not only did it work flawlessly, the new method was also way faster than using youtube-dl.\n",
+  "wordCount" : "318",
+  "inLanguage": "en",
+  "datePublished": "2021-12-24T12:50:51-08:00",
+  "dateModified": "2021-12-24T12:50:51-08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Harry Zhou"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Harry's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mvp-harry.github.io/harryzhou.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mvp-harry.github.io/harryzhou.github.io/" accesskey="h" title="Harry&#39;s Blog (Alt + H)">Harry&#39;s Blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://mvp-harry.github.io/harryzhou.github.io/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mvp-harry.github.io/harryzhou.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mvp-harry.github.io/harryzhou.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Download Youtube Playlists With Python
+    </h1>
+    <div class="post-meta"><span title='2021-12-24 12:50:51 -0800 PST'>December 24, 2021</span>&nbsp;·&nbsp;Harry Zhou
+
+</div>
+  </header> 
+  <div class="post-content"><p>Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don&rsquo;t particularly fit my taste, so I want to download my own <a href="https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-playlist/"><em><strong>Christmas playlist</strong></em></a>.</p>
+<p><del>But my dad refused to tell me how he pirates his music.</del> Now in the past, I&rsquo;ve been using this command-line tool <a href="https://github.com/ytdl-org/youtube-dl">youtube-dl</a> to download youtube videos and convert them to mp3. However, there are a few issues with the tool. First of all, it can be extremely slow sometimes. Secondly, I frequently received error messages like <code>ERROR: unable to download video data: HTTP Error 403: Forbidden</code> in the middle of downloading a playlist/album. Turns out that the way to fix this problem is to remove the cache using flags such as <code>--rm-cache-dir</code>. However, when I try to download an entire playlist, I don&rsquo;t know how to add the flag.</p>
+<p>Therefore, after a little research, I decided to go with a new method using the python library <code>pytube</code>. The following function would take the url of a video and convert it to mp3 and save it in a specified directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">download_single_video</span>(url):
+    yt <span style="color:#f92672">=</span> YouTube(url)
+
+    <span style="color:#75715e"># extract only audio</span>
+    video <span style="color:#f92672">=</span> yt<span style="color:#f92672">.</span>streams<span style="color:#f92672">.</span>filter(only_audio<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)<span style="color:#f92672">.</span>first()
+
+    <span style="color:#75715e"># check for destination to save file</span>
+    destination <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;./Music/Relaxing2&#39;</span>
+
+    <span style="color:#75715e"># download the file</span>
+    out_file <span style="color:#f92672">=</span> video<span style="color:#f92672">.</span>download(output_path<span style="color:#f92672">=</span>destination)
+
+    <span style="color:#75715e"># save the file</span>
+    base, ext <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>splitext(out_file)
+    new_file <span style="color:#f92672">=</span> base <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.mp3&#39;</span>
+    os<span style="color:#f92672">.</span>rename(out_file, new_file)
+</code></pre></div><p>To download an entire playlist, we just need the <code>Playlist</code> feature from the <code>pytube</code> library and iterate though each url in the playlist:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">playlist <span style="color:#f92672">=</span> Playlist(
+	str(input(<span style="color:#e6db74">&#34;Enter the URL of the video you want to download: </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&gt;&gt; &#34;</span>)))
+
+print(<span style="color:#e6db74">&#39;Number of videos: </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span> len(playlist<span style="color:#f92672">.</span>video_urls))
+
+<span style="color:#66d9ef">for</span> url <span style="color:#f92672">in</span> playlist<span style="color:#f92672">.</span>video_urls:
+    download_single_video(url)
+</code></pre></div><p>Using this method, I easily downloaded my <a href="https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-playlist/"><em><strong>amazing playlist</strong></em></a>. Not only did it work flawlessly, the new method was also way faster than using <code>youtube-dl</code>.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mvp-harry.github.io/harryzhou.github.io/tags/tech/">Tech</a></li>
+      <li><a href="https://mvp-harry.github.io/harryzhou.github.io/tags/python/">Python</a></li>
+      <li><a href="https://mvp-harry.github.io/harryzhou.github.io/tags/music/">Music</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="https://mvp-harry.github.io/harryzhou.github.io/">Harry&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
