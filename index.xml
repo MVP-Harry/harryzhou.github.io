@@ -6,7 +6,16 @@
     <description>Recent content on Harry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Dec 2021 20:04:11 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Dec 2021 10:11:56 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CP Log (12/24 - 12/26)</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/cp-log-1/</link>
+      <pubDate>Fri, 24 Dec 2021 10:11:56 -0800</pubDate>
+      
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/cp-log-1/</guid>
+      <description>   Date Problem Difficulty (1-5) Status Algorithms     12/24 CF1615A 1 Solved Greedy   12/24 CF1615B 1 Solved Prefix Sum   12/24 CF1615C 3 WA Greedy   12/24 CF1615D 3.5 NA Greedy, Tree   12/24 CF1615E 4 NA Tree, Greedy, Game    </description>
+    </item>
+    
     <item>
       <title>Christmas Playlist</title>
       <link>https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-playlist/</link>
