@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>POTD on Harry&#39;s Blog</title>
+    <link>https://mvp-harry.github.io/harryzhou.github.io/tags/potd/</link>
+    <description>Recent content in POTD on Harry&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Dec 2021 15:51:51 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/tags/potd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>POTD 12/25/21</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/</link>
+      <pubDate>Sat, 25 Dec 2021 15:51:51 -0800</pubDate>
+      
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/</guid>
+      <description>Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue.</description>
+    </item>
+    
+  </channel>
+</rss>

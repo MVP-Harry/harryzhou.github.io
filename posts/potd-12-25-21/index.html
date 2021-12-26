@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>POTD 12/25/21 | Harry&#39;s Blog</title>
+<meta name="keywords" content="CP, POTD" />
+<meta name="description" content="Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue.">
+<meta name="author" content="Harry Zhou">
+<link rel="canonical" href="https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/" />
+<link crossorigin="anonymous" href="/harryzhou.github.io/assets/css/stylesheet.min.c88963fe2d79462000fd0fb1b3737783c32855d340583e4523343f8735c787f0.css" integrity="sha256-yIlj/i15RiAA/Q&#43;xs3N3g8MoVdNAWD5FIzQ/hzXHh/A=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/harryzhou.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mvp-harry.github.io/harryzhou.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mvp-harry.github.io/harryzhou.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mvp-harry.github.io/harryzhou.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mvp-harry.github.io/harryzhou.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mvp-harry.github.io/harryzhou.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.89.4" />
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+
+<meta property="og:title" content="POTD 12/25/21" />
+<meta property="og:description" content="Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-25T15:51:51-08:00" />
+<meta property="article:modified_time" content="2021-12-25T15:51:51-08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="POTD 12/25/21"/>
+<meta name="twitter:description" content="Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://mvp-harry.github.io/harryzhou.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "POTD 12/25/21",
+      "item": "https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "POTD 12/25/21",
+  "name": "POTD 12\/25\/21",
+  "description": "Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue.",
+  "keywords": [
+    "CP", "POTD"
+  ],
+  "articleBody": "Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue. Suppose two players play optimally, Red wants to maximize the value $w (r - b)$ where $w$ is the number of nodes without a color.\nSolution First, $w(r - b) = (N - r - b)(r - b) = r(N - r) - b(N - b)$. After Red perform his operation, Blue wants to maximize the value $b(N - b)$, which is achieved when $b$ is close to $\\frac{N}{2}$. Additionally, let $x$ be the maximum blue nodes that can be obtained, it’s not hard to see that $y \\le x$ blue nodes can also be obtained. Thus, Red wants to minimize the maximum blue nodes available, so that Blue has “less options”.\nSecondly, for each $1 \\le i \\le K$, let that be the number of red nodes. Each red node guarantees that its ancestors (its path to the root) cannot be colored blue, and we want to maximize that value. Therefore, sort the nodes by decreasing depths, and for each of them, color all the nodes along its path to the root, until it meets another colored root. Call the value $val[i]$, and we sort the $val$ array by decreasing order and iterate through it to solve the problem. Time complexity $O(nlogn)$.\nCode #include #define INF 0x3f3f3f3f #define rep(i, m, n) for (int i = m; i #define per(i, m, n) for (int i = m; i = n; i--) #define sz(v) (int) v.size() #define all(v) v.begin(), v.end() #define ll long long #define pb push_back #define mp make_pair #define fi first #define se second  const int maxn = 2e5 + 5; int n, k; int par[maxn], depth[maxn], order[maxn], vis[maxn], val[maxn]; std::vectorint adj[maxn]; void dfs(int u, int p) { par[u] = p; depth[u] = depth[p] + 1; for (auto v : adj[u]) { if (v == p) continue; dfs(v, u); } } bool cmp(int i, int j) { return depth[i]  depth[j]; } int main() { std::ios::sync_with_stdio(false); std::cin.tie(0); std::cout.tie(0); std::cin  n  k; rep(i, 1, n - 1) { int u, v; std::cin  u  v; adj[u].push_back(v); adj[v].push_back(u); } dfs(1, 0); rep(i, 1, n) order[i] = i; std::sort(order + 1, order + n + 1, cmp); rep(i, 1, n) { int x = order[i]; while (x != 0 \u0026\u0026 !vis[x]) { val[order[i]]++; vis[x] = 1; x = par[x]; } } std::sort(val + 1, val + n + 1, std::greaterint()); int available = n; ll ans = -1e18; rep(i, 1, k) { available -= val[i]; int blue = std::min(available, n / 2); ans = std::max(ans, (ll) i * (n - i) - (ll) blue * (n - blue)); } std::cout  ans  std::endl; return 0; } Summary This is a pretty good problem involving tree and a little bit of game theory. The key observation is that Red wants to minimize the option Blue has.\n",
+  "wordCount" : "544",
+  "inLanguage": "en",
+  "datePublished": "2021-12-25T15:51:51-08:00",
+  "dateModified": "2021-12-25T15:51:51-08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Harry Zhou"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Harry's Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mvp-harry.github.io/harryzhou.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mvp-harry.github.io/harryzhou.github.io/" accesskey="h" title="Harry&#39;s Blog (Alt + H)">Harry&#39;s Blog</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://mvp-harry.github.io/harryzhou.github.io/archives/" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mvp-harry.github.io/harryzhou.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mvp-harry.github.io/harryzhou.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      POTD 12/25/21
+    </h1>
+    <div class="post-meta"><span title='2021-12-25 15:51:51 -0800 PST'>December 25, 2021</span>&nbsp;·&nbsp;Harry Zhou
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="problem-statement-cf-1615-ehttpscodeforcescomcontest1615probleme">Problem Statement (<a href="https://codeforces.com/contest/1615/problem/E">CF 1615 E</a>)<a hidden class="anchor" aria-hidden="true" href="#problem-statement-cf-1615-ehttpscodeforcescomcontest1615probleme">#</a></h2>
+<p>Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue. Suppose two players play optimally, Red wants to maximize the value $w (r - b)$ where $w$ is the number of nodes without a color.</p>
+<h2 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
+<p>First, $w(r - b) = (N - r - b)(r - b) = r(N - r) - b(N - b)$. After Red perform his operation, Blue wants to maximize the value $b(N - b)$, which is achieved when $b$ is close to $\frac{N}{2}$. Additionally, let $x$ be the maximum blue nodes that can be obtained, it&rsquo;s not hard to see that $y \le x$ blue nodes can also be obtained. Thus, Red wants to minimize the maximum blue nodes available, so that Blue has &ldquo;less options&rdquo;.</p>
+<p>Secondly, for each $1 \le i \le K$, let that be the number of red nodes. Each red node guarantees that its ancestors (its path to the root) cannot be colored blue, and we want to maximize that value. Therefore, sort the nodes by decreasing depths, and for each of them, color all the nodes along its path to the root, until it meets another colored root. Call the value $val[i]$, and we sort the $val$ array by decreasing order and iterate through it to solve the problem. Time complexity $O(nlogn)$.</p>
+<h2 id="code">Code<a hidden class="anchor" aria-hidden="true" href="#code">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;bits/stdc++.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#define INF 0x3f3f3f3f
+</span><span style="color:#75715e">#define rep(i, m, n) for (int i = m; i &lt;= n; i++)
+</span><span style="color:#75715e">#define per(i, m, n) for (int i = m; i &gt;= n; i--)
+</span><span style="color:#75715e">#define sz(v) (int) v.size()
+</span><span style="color:#75715e">#define all(v) v.begin(), v.end()
+</span><span style="color:#75715e">#define ll long long
+</span><span style="color:#75715e">#define pb push_back
+</span><span style="color:#75715e">#define mp make_pair
+</span><span style="color:#75715e">#define fi first
+</span><span style="color:#75715e">#define se second
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> maxn <span style="color:#f92672">=</span> <span style="color:#ae81ff">2e5</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">5</span>;
+
+<span style="color:#66d9ef">int</span> n, k;
+<span style="color:#66d9ef">int</span> par[maxn], depth[maxn], order[maxn], vis[maxn], val[maxn];
+std<span style="color:#f92672">::</span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> adj[maxn];
+
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">dfs</span>(<span style="color:#66d9ef">int</span> u, <span style="color:#66d9ef">int</span> p) {
+	par[u] <span style="color:#f92672">=</span> p;
+	depth[u] <span style="color:#f92672">=</span> depth[p] <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+	<span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">auto</span> v : adj[u]) {
+		<span style="color:#66d9ef">if</span> (v <span style="color:#f92672">==</span> p) <span style="color:#66d9ef">continue</span>;
+		dfs(v, u);
+	}
+}
+
+<span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">cmp</span>(<span style="color:#66d9ef">int</span> i, <span style="color:#66d9ef">int</span> j) {
+	<span style="color:#66d9ef">return</span> depth[i] <span style="color:#f92672">&gt;</span> depth[j];
+}
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+	std<span style="color:#f92672">::</span>ios<span style="color:#f92672">::</span>sync_with_stdio(false);
+	std<span style="color:#f92672">::</span>cin.tie(<span style="color:#ae81ff">0</span>); std<span style="color:#f92672">::</span>cout.tie(<span style="color:#ae81ff">0</span>);
+	std<span style="color:#f92672">::</span>cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> k;
+	rep(i, <span style="color:#ae81ff">1</span>, n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) {
+		<span style="color:#66d9ef">int</span> u, v;
+		std<span style="color:#f92672">::</span>cin <span style="color:#f92672">&gt;&gt;</span> u <span style="color:#f92672">&gt;&gt;</span> v;
+		adj[u].push_back(v);
+		adj[v].push_back(u);
+	}
+
+	dfs(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>);
+
+	rep(i, <span style="color:#ae81ff">1</span>, n) order[i] <span style="color:#f92672">=</span> i;
+	std<span style="color:#f92672">::</span>sort(order <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, order <span style="color:#f92672">+</span> n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, cmp);
+
+	rep(i, <span style="color:#ae81ff">1</span>, n) {
+		<span style="color:#66d9ef">int</span> x <span style="color:#f92672">=</span> order[i];
+		<span style="color:#66d9ef">while</span> (x <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>vis[x]) {
+			val[order[i]]<span style="color:#f92672">++</span>;
+			vis[x] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+			x <span style="color:#f92672">=</span> par[x];
+		}
+	}
+
+	std<span style="color:#f92672">::</span>sort(val <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, val <span style="color:#f92672">+</span> n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, std<span style="color:#f92672">::</span>greater<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span>());
+
+	<span style="color:#66d9ef">int</span> available <span style="color:#f92672">=</span> n;
+	ll ans <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1e18</span>;
+	rep(i, <span style="color:#ae81ff">1</span>, k) {
+		available <span style="color:#f92672">-=</span> val[i];
+		<span style="color:#66d9ef">int</span> blue <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>min(available, n <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+		ans <span style="color:#f92672">=</span> std<span style="color:#f92672">::</span>max(ans, (ll) i <span style="color:#f92672">*</span> (n <span style="color:#f92672">-</span> i) <span style="color:#f92672">-</span> (ll) blue <span style="color:#f92672">*</span> (n <span style="color:#f92672">-</span> blue));
+	}
+	std<span style="color:#f92672">::</span>cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> std<span style="color:#f92672">::</span>endl;
+
+	<span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><h2 id="summary">Summary<a hidden class="anchor" aria-hidden="true" href="#summary">#</a></h2>
+<p>This is a pretty good problem involving tree and a little bit of game theory. The key observation is that Red wants to minimize the option Blue has.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mvp-harry.github.io/harryzhou.github.io/tags/cp/">CP</a></li>
+      <li><a href="https://mvp-harry.github.io/harryzhou.github.io/tags/potd/">POTD</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2021 <a href="https://mvp-harry.github.io/harryzhou.github.io/">Harry&#39;s Blog</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

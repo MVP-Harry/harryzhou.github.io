@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Harry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Dec 2021 12:50:51 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Dec 2021 15:51:51 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>POTD 12/25/21</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/</link>
+      <pubDate>Sat, 25 Dec 2021 15:51:51 -0800</pubDate>
+      
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/</guid>
+      <description>Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue.</description>
+    </item>
+    
     <item>
       <title>Download Youtube Playlists With Python</title>
       <link>https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/</link>
@@ -23,7 +32,7 @@ But my dad refused to tell me how he pirates his music. Now in the past, I&amp;r
       <pubDate>Fri, 24 Dec 2021 10:11:56 -0800</pubDate>
       
       <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/cp-log-1/</guid>
-      <description>   Date Problem Difficulty (1-5) Status Algorithms     12/24 CF1615A 1 Solved Greedy   12/24 CF1615B 1 Solved Prefix Sum   12/24 CF1615C 3 WA Greedy   12/24 CF1615D 3.5 NA Greedy, Tree   12/24 CF1615E 4 NA Tree, Greedy, Game    </description>
+      <description>Date Problem Difficulty (1-5) Status Algorithms     12/25 HILO 4.5 - 5 WA/NA DP   12/25 Paired Up (Plat.) 4.5 - 5 WA/NA DP   12/25 Tickets (21 Dec Plat.) 4.5 - 5 WA/NA Graph, Segment Tree   12/25 CF1615E 4 NA -&amp;gt; Solved Tree, Greedy, Game   12/25 CF1615D 3.5 NA -&amp;gt; WA Tree, Xor, Observation   12/25 CF1615C 3 WA -&amp;gt; Solved Greedy   12/24 CF1615A 1 Solved Greedy   12/24 CF1615B 1 Solved Prefix Sum   12/24 CF1615C 3 WA Greedy   12/24 CF1615D 3.</description>
     </item>
     
     <item>
