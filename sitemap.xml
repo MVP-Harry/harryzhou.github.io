@@ -2,28 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/posts/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/usaco/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/usaco/</loc>
+    <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/blog/</loc>
     <lastmod>2022-01-17T19:24:43-08:00</lastmod>
   </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/blog/</loc>
     <lastmod>2022-01-17T19:24:43-08:00</lastmod>
   </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/</loc>
-    <lastmod>2022-01-17T19:24:43-08:00</lastmod>
-  </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/</loc>
-    <lastmod>2022-01-17T19:24:43-08:00</lastmod>
-  </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/image/</loc>
     <lastmod>2022-01-17T19:24:43-08:00</lastmod>
   </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/posts/image-on-my-blog/</loc>
-    <lastmod>2022-01-17T19:24:43-08:00</lastmod>
-  </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/posts/</loc>
-    <lastmod>2022-01-17T19:24:43-08:00</lastmod>
-  </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/</loc>
     <lastmod>2022-01-17T19:24:43-08:00</lastmod>
   </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/goals/</loc>
@@ -53,19 +62,10 @@
     <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/goals/</loc>
     <lastmod>2022-01-13T10:42:07-08:00</lastmod>
   </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</loc>
-    <lastmod>2022-01-13T10:42:07-08:00</lastmod>
-  </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/plans/</loc>
     <lastmod>2022-01-13T10:42:07-08:00</lastmod>
   </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/plans/</loc>
-    <lastmod>2022-01-13T10:42:07-08:00</lastmod>
-  </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/usaco/</loc>
-    <lastmod>2022-01-13T10:42:07-08:00</lastmod>
-  </url><url>
-    <loc>https://mvp-harry.github.io/harryzhou.github.io/categories/usaco/</loc>
     <lastmod>2022-01-13T10:42:07-08:00</lastmod>
   </url><url>
     <loc>https://mvp-harry.github.io/harryzhou.github.io/tags/negativity/</loc>

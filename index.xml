@@ -6,7 +6,16 @@
     <description>Recent content on Harry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jan 2022 19:24:43 -0800</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Second to Last USACO Contest</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</guid>
+      <description>12:08 PM, 10 minutes before USACO February ends. I still have a 0 as my score. I probably could&amp;rsquo;ve gotten some partial credits if I wanted to, but what&amp;rsquo;s the point? I&amp;rsquo;d rather get a dignified zero than some embarrassing two-digit score. With that mindset, I spent three hours trying to solve the first problem. There are a few points when I felt that I solved the problem, that I have broken through, but there were always some tiny cases when my algorithm wouldn&amp;rsquo;t work.</description>
+    </item>
+    
     <item>
       <title>Image on My Blog</title>
       <link>https://mvp-harry.github.io/harryzhou.github.io/posts/image-on-my-blog/</link>
@@ -33,15 +42,6 @@ Goals    Goals Progress     USACO January 400 pts    Correctly solve 10 problems
       
       <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/2022-major-goals/</guid>
       <description>Academic Goals  USACO National Camp (Incoming: 1/29) AIME 10+ (2/8) At least one summer program/internship Work on a research project SAT 1550+ (ACT?) 6/4 AP Test all 5 (May), grade all A  Personal Goals  Get my driver&amp;rsquo;s license Complete a machine learning project Actively maintain my blog Generating Function PMO Project (&amp;lt;= 50)  </description>
-    </item>
-    
-    <item>
-      <title>My Second to Last USACO Contest</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</link>
-      <pubDate>Thu, 13 Jan 2022 10:42:07 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</guid>
-      <description>12:08 PM, 10 minutes before USACO February ends. I still have a 0 as my score. I probably could&amp;rsquo;ve gotten some partial credits if I wanted to, but what&amp;rsquo;s the point? I&amp;rsquo;d rather get a dignified zero than some embarrassing two-digit score. With that mindset, I spent three hours trying to solve the first problem. There are a few points when I felt that I solved the problem, that I have broken through, but there were always some tiny cases when my algorithm wouldn&amp;rsquo;t work.</description>
     </item>
     
     <item>
