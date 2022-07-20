@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 20 Jul 2022 09:31:14 -0700</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/categories/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Four Color Theorem</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/the-four-color-theorem/</link>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/the-four-color-theorem/the-four-color-theorem/</link>
       <pubDate>Wed, 20 Jul 2022 09:31:14 -0700</pubDate>
       
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/the-four-color-theorem/</guid>
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/the-four-color-theorem/the-four-color-theorem/</guid>
       <description>At the end of Stanford Math Camp (SUMaC), it&amp;rsquo;s a tradition that students will give a research presentation on a topology-related topic that they are interested in. This year, I teamed up with Nanxi and Ben, and we tackled the Four Color Theorem. Below is the presentation that we made.
   #the-canvas { border: 1px solid black; direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next &amp;nbsp; &amp;nbsp; Page:  /       window.</description>
     </item>
