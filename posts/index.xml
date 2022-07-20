@@ -6,113 +6,14 @@
     <description>Recent content in Posts on Harry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 09:31:14 -0700</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Second to Last USACO Contest</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</link>
-      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      <title>The Four Color Theorem</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/the-four-color-theorem/</link>
+      <pubDate>Wed, 20 Jul 2022 09:31:14 -0700</pubDate>
       
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/my-second-to-last-usaco-contest/</guid>
-      <description>12:08 PM, 10 minutes before USACO February ends. I still have a 0 as my score. I probably could&amp;rsquo;ve gotten some partial credits if I wanted to, but what&amp;rsquo;s the point? I&amp;rsquo;d rather get a dignified zero than some embarrassing two-digit score. With that mindset, I spent three hours trying to solve the first problem. There are a few points when I felt that I solved the problem, that I have broken through, but there were always some tiny cases when my algorithm wouldn&amp;rsquo;t work.</description>
-    </item>
-    
-    <item>
-      <title>Image on My Blog</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/image-on-my-blog/</link>
-      <pubDate>Mon, 17 Jan 2022 19:24:43 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/image-on-my-blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>January Plan</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/january-plan/</link>
-      <pubDate>Thu, 13 Jan 2022 11:07:41 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/january-plan/</guid>
-      <description>Upcoming Major Events  USACO January (1/28-1/31) AIME I (2/8)  Both USACO and AIME are taking place really soon, making the last two weeks of January extremely important. Practicing those two are definitely my top priorities.
-Goals    Goals Progress     USACO January 400 pts    Correctly solve 10 problems in practice AIME    SUMaC solve 6 problems    Change blog theme (when free)    Tsu Chi Website    Fap &amp;lt;= 2     Specific Training Plans Stage 1 (1/13 - 1/16): Get back my &amp;ldquo;feeling for the game&amp;rdquo; - Solve 20 easy cf problems - Solve 10 years of #1-7 AIME</description>
-    </item>
-    
-    <item>
-      <title>2022 Major Goals</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/2022-major-goals/</link>
-      <pubDate>Thu, 13 Jan 2022 10:42:07 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/2022-major-goals/</guid>
-      <description>Academic Goals  USACO National Camp (Incoming: 1/29) AIME 10+ (2/8) At least one summer program/internship Work on a research project SAT 1550+ (ACT?) 6/4 AP Test all 5 (May), grade all A  Personal Goals  Get my driver&amp;rsquo;s license Complete a machine learning project Actively maintain my blog Generating Function PMO Project (&amp;lt;= 50)  </description>
-    </item>
-    
-    <item>
-      <title>Negativity</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/negativity/</link>
-      <pubDate>Sun, 02 Jan 2022 21:46:16 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/negativity/</guid>
-      <description>Second day of 2022. Hooray time to spread some negativity!
-I suck. At competitive programming. At math. At writing fucking essays. I suck at keeping my promises. I suck at sticking to my todo lists.
-I am lonely. I want love.
-I&amp;rsquo;ve always thought that life will get better as I grow up. Bad habits will fade away. Looks like I&amp;rsquo;m wrong, huh?
-Life is almost repetitive.
-while (alive) { wakeup() suffer() go_to_sleep_thinking_something_will_change_tomorrow() } I hope something will change tomorrow.</description>
-    </item>
-    
-    <item>
-      <title>POTD 12/25/21</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/</link>
-      <pubDate>Sat, 25 Dec 2021 15:51:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/potd-12-25-21/</guid>
-      <description>Problem Statement (CF 1615 E) Given a tree with root $1$ and $N$ nodes, there are two players Red and Blue. Red can perform the following operation: pick a subtree and color all its nodes red. However, the total number of red nodes cannot exceed $K$. After Red performs his operation, Blue can also pick a subtree, as long as it does not contain a red node, and color all of its nodes blue.</description>
-    </item>
-    
-    <item>
-      <title>Download Youtube Playlists With Python</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/</link>
-      <pubDate>Fri, 24 Dec 2021 12:50:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/download-youtube-playlists-with-python/</guid>
-      <description>Recently, I got a mp3 player from my dad so that I can listen to music in bed without using any devices that could potentially be distracting. However, most of the music on the mp3 player don&amp;rsquo;t particularly fit my taste, so I want to download my own Christmas playlist.
-But my dad refused to tell me how he pirates his music. Now in the past, I&amp;rsquo;ve been using this command-line tool youtube-dl to download youtube videos and convert them to mp3.</description>
-    </item>
-    
-    <item>
-      <title>CP Log (12/24 - 12/26)</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/cp-log-1/</link>
-      <pubDate>Fri, 24 Dec 2021 10:11:56 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/cp-log-1/</guid>
-      <description>Date Problem Difficulty (1-5) Status Algorithms     12/25 HILO 4.5 - 5 WA/NA DP   12/25 Paired Up (Plat.) 4.5 - 5 WA/NA DP   12/25 Tickets (21 Dec Plat.) 4.5 - 5 WA/NA Graph, Segment Tree   12/25 CF1615E 4 NA -&amp;gt; Solved Tree, Greedy, Game   12/25 CF1615D 3.5 NA -&amp;gt; WA Tree, Xor, Observation   12/25 CF1615C 3 WA -&amp;gt; Solved Greedy   12/24 CF1615A 1 Solved Greedy   12/24 CF1615B 1 Solved Prefix Sum   12/24 CF1615C 3 WA Greedy   12/24 CF1615D 3.</description>
-    </item>
-    
-    <item>
-      <title>Christmas Playlist</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-playlist/</link>
-      <pubDate>Mon, 20 Dec 2021 20:04:11 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-playlist/</guid>
-      <description>FINALLY THE MOST EPIC PLAYLIST WAS BORN!!!
-I&amp;rsquo;ve long been planning to make a playlist that contains all the music that I like. Now, it is here. Note that this playlist mainly contains classic rock, post rock, folk, dream pop/shoegaze, hip-hop and pop. Most metal songs are not included because I will make a separate playlist for them. Enjoy!</description>
-    </item>
-    
-    <item>
-      <title>Christmas Resolution</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-resolution/</link>
-      <pubDate>Sat, 18 Dec 2021 09:21:27 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/christmas-resolution/</guid>
-      <description>$\text{Feliz Navidad Amigos!}$
-The long-awaited Christmas break has finally arrived. No need to wake up at 6:30 or finish the boring data structure homework anymore. YES. That being said, I also don&amp;rsquo;t want my break to be me pointlessly surfing the Internet and wasting time. This break is meant to be a time to rest, be productive and explore new interests. Therefore, I decided to create the following list of goals:</description>
-    </item>
-    
-    <item>
-      <title>Purpose of This Blog</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/posts/purpose-of-this-blog/</link>
-      <pubDate>Sun, 05 Dec 2021 10:02:24 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/purpose-of-this-blog/</guid>
-      <description>This is a personal blog. Although I hope the readers (who knows? Maybe the blog will blow up one day) can take away a lot from reading my posts, the main purpose of the blog is to document my observations, opinions and growths. As of right now, the blog will be mainly on computer science, math, life in general, my takeaways on current events, and music/book reviews.</description>
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/posts/the-four-color-theorem/</guid>
+      <description>At the end of Stanford Math Camp (SUMaC), it&amp;rsquo;s a tradition that students will give a research presentation on a topology-related topic that they are interested in. This year, I teamed up with Nanxi and Ben, and we tackled the Four Color Theorem. Below is the presentation that we made.</description>
     </item>
     
   </channel>

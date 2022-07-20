@@ -6,166 +6,31 @@
     <description>Recent content in Tags on Harry&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jul 2022 09:31:14 -0700</lastBuildDate><atom:link href="https://mvp-harry.github.io/harryzhou.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>USACO</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/usaco/</link>
-      <pubDate>Sun, 27 Feb 2022 00:00:00 +0000</pubDate>
+      <title>Computer Science</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/computer-science/</link>
+      <pubDate>Wed, 20 Jul 2022 09:31:14 -0700</pubDate>
       
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/usaco/</guid>
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/computer-science/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/blog/</link>
-      <pubDate>Mon, 17 Jan 2022 19:24:43 -0800</pubDate>
+      <title>Four Color Theorem</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/four-color-theorem/</link>
+      <pubDate>Wed, 20 Jul 2022 09:31:14 -0700</pubDate>
       
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/blog/</guid>
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/four-color-theorem/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Image</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/image/</link>
-      <pubDate>Mon, 17 Jan 2022 19:24:43 -0800</pubDate>
+      <title>Math</title>
+      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/math/</link>
+      <pubDate>Wed, 20 Jul 2022 09:31:14 -0700</pubDate>
       
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/image/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Goals</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/goals/</link>
-      <pubDate>Thu, 13 Jan 2022 11:07:41 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/goals/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>January</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/january/</link>
-      <pubDate>Thu, 13 Jan 2022 11:07:41 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/january/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plan</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/plan/</link>
-      <pubDate>Thu, 13 Jan 2022 11:07:41 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/plan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2022</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/2022/</link>
-      <pubDate>Thu, 13 Jan 2022 10:42:07 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plans</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/plans/</link>
-      <pubDate>Thu, 13 Jan 2022 10:42:07 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/plans/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Negativity</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/negativity/</link>
-      <pubDate>Sun, 02 Jan 2022 21:46:16 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/negativity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personal</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/personal/</link>
-      <pubDate>Sun, 02 Jan 2022 21:46:16 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CP</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/cp/</link>
-      <pubDate>Sat, 25 Dec 2021 15:51:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/cp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>POTD</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/potd/</link>
-      <pubDate>Sat, 25 Dec 2021 15:51:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/potd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Music</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/music/</link>
-      <pubDate>Fri, 24 Dec 2021 12:50:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/python/</link>
-      <pubDate>Fri, 24 Dec 2021 12:50:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/tech/</link>
-      <pubDate>Fri, 24 Dec 2021 12:50:51 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/tech/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Log</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/log/</link>
-      <pubDate>Fri, 24 Dec 2021 10:11:56 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/log/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Christmas</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/christmas/</link>
-      <pubDate>Mon, 20 Dec 2021 20:04:11 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/christmas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>other</title>
-      <link>https://mvp-harry.github.io/harryzhou.github.io/tags/other/</link>
-      <pubDate>Sun, 05 Dec 2021 10:02:24 -0800</pubDate>
-      
-      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/other/</guid>
+      <guid>https://mvp-harry.github.io/harryzhou.github.io/tags/math/</guid>
       <description></description>
     </item>
     
